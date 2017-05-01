@@ -1,0 +1,3 @@
+com/jing/emperor/domain/datasource/config/MybatisConfig.class
+com/jing/emperor/domain/datasource/config/DataSourceConfiguration.class
+com/jing/emperor/domain/datasource/config/MyBatisMapperScannerConfig.class

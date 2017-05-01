@@ -1,0 +1,8 @@
+com/jing/emporer/domain/model/EmpOrgExample$Criteria.class
+com/jing/emporer/domain/model/EmpOrgExample$Criterion.class
+com/jing/emporer/domain/service/impl/EmpOrgDomainServiceImpl.class
+com/jing/emporer/domain/service/EmpOrgDomainServiceInterface.class
+com/jing/emporer/domain/model/EmpOrgExample.class
+com/jing/emporer/domain/model/EmpOrg.class
+com/jing/emporer/domain/mapper/EmpOrgMapper.class
+com/jing/emporer/domain/model/EmpOrgExample$GeneratedCriteria.class

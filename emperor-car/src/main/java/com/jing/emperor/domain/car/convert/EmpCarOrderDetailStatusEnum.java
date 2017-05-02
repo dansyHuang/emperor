@@ -1,15 +1,15 @@
 package com.jing.emperor.domain.car.convert;
 
 //订单状态
-public enum EmpCarOrderStatusEnum {
+public enum EmpCarOrderDetailStatusEnum {
 
-	 WAIT_START("wait_start", "人数已满，待发车"), STARTING("starting", "发车中"), FINISH("end_travel", "已完成");
+	 WAIT_START("wait_start", "待发车"), STARTING("starting", "发车中"), FINISH("finish", "已结单"),CANCEL("cancel", "已取消");
 
 	private String status;
 	
 	private String description;
 
-	EmpCarOrderStatusEnum(String status, String description) {
+	EmpCarOrderDetailStatusEnum(String status, String description) {
 		this.status=status;
 		this.description=description;
 	}
@@ -40,8 +40,8 @@ public enum EmpCarOrderStatusEnum {
 
 
 
-	public static EmpCarOrderStatusEnum getInstance(String status){
-		for(EmpCarOrderStatusEnum carOrderStatus:EmpCarOrderStatusEnum.values()){
+	public static EmpCarOrderDetailStatusEnum getInstance(String status){
+		for(EmpCarOrderDetailStatusEnum carOrderStatus:EmpCarOrderDetailStatusEnum.values()){
 			if(carOrderStatus.getStatus().equals(status)){
 				return carOrderStatus;
 			}

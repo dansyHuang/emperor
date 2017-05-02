@@ -160,6 +160,17 @@ public class EmpCarDomainServiceImpl implements EmpCarDomainServiceInterface {
 		}
 		return result;
 	}
+
+	@Override
+	public EmpCarVo selectEmpCarByCarNo(String carNo) throws EmporerCarException {
+		EmpCarExample query=new EmpCarExample();
+		query.createCriteria().andCarNoEqualTo(carNo);
+		List<EmpCar> entityList=empCarMapper.selectByExample(query);
+		if(ListUtil.isNotEmpty(entityList)){
+			return EmpCarConvert.convertEntityToVo(entityList.get(0));
+		}
+		return null;
+	}
 	
 
 }

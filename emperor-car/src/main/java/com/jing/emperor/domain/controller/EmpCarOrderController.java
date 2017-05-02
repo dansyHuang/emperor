@@ -88,7 +88,7 @@ public class EmpCarOrderController {
 		ResultModel<String> result=new ResultModel<String>();
 		try {
 			UpdateEmpCarOrderVo updateVo =new UpdateEmpCarOrderVo();
-			updateVo.setStatus(EmpCarOrderStatusEnum.END);
+			updateVo.setStatus(EmpCarOrderStatusEnum.FINISH);
 			String id=empCarOrderDomainService.updateCarOrder(updateVo);
 			result.setValue(id);
 		} catch (EmporerCarException e) {

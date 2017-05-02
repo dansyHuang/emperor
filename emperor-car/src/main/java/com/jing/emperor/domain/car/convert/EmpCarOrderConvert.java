@@ -73,6 +73,7 @@ public class EmpCarOrderConvert {
 		vo.setTatalAmount(entity.getTotalAmount());
 		vo.setGmtCreate(entity.getGmtCreate());
 		vo.setCreator(entity.getCreator());
+		vo.setCarNo(entity.getCarNo());
 		return vo;
 	}
 }

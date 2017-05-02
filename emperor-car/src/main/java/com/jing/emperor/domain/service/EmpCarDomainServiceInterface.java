@@ -72,4 +72,13 @@ public interface EmpCarDomainServiceInterface {
 	public List<String> selectUserByCarNo(String carNo) throws EmporerCarException;
 	
 	
+	/**
+	 * 根据车牌号查找车辆
+	 * @param carNo
+	 * @return
+	 * @throws EmporerCarException
+	 */
+	public EmpCarVo selectEmpCarByCarNo(String carNo) throws EmporerCarException;
+	
+	
 }

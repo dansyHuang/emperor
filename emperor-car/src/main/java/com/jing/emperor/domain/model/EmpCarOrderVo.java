@@ -44,7 +44,17 @@ public class EmpCarOrderVo implements Serializable {
 	//创建人
 	private String creator;
 	
+	private String carNo;
 	
+	
+	public String getCarNo() {
+		return carNo;
+	}
+
+	public void setCarNo(String carNo) {
+		this.carNo = carNo;
+	}
+
 	public Date getGmtCreate() {
 		return gmtCreate;
 	}

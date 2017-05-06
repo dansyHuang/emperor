@@ -1,5 +1,6 @@
 package com.jing.emperor.domain.car.convert;
 
+import com.jing.emperor.common.DbConstants;
 import com.jing.emperor.domain.model.CreateEmpCarVo;
 import com.jing.emperor.domain.model.EmpCar;
 import com.jing.emperor.domain.model.EmpCarVo;
@@ -21,6 +22,7 @@ public class EmpCarConvert {
 		car.setCarInsuranceInfo(vo.getCarInsuranceInfo());
 		car.setCarSeats(vo.getCarSeats());
 		car.setCarNo(vo.getCarNo());
+		car.setIsDeleted(DbConstants.NO);
 		car.setCarType(vo.getCarType());
 		return car;
 	}
